@@ -1,6 +1,25 @@
-# 🛒 Mock E-Commerce Cart
+# 🛒 E-Commerce Shopping Cart
 
-A full-stack e-commerce shopping cart application built with React.js and Node.js for Vibe Commerce's screening test.
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-14+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.18-000000?style=for-the-badge&logo=express&logoColor=white)
+
+A full-stack e-commerce shopping cart application built with **React**, **Node.js**, **Express**, and **MongoDB**. Features a complete product catalog, shopping cart management, checkout process, and order tracking system.
+
+## 🎥 Demo Video
+
+> **[Watch Demo Video](YOUR_VIDEO_LINK_HERE)** - 2 minute walkthrough of the application
+
+## 📑 Table of Contents
+
+- [Screenshots](#-screenshots)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#-installation--setup)
+- [API Endpoints](#-api-endpoints)
+- [Usage](#-usage)
 
 ## 📸 Screenshots
 
@@ -310,16 +329,82 @@ npm start  # Runs with hot-reload
 - axios: ^1.6.0
 - lucide-react: ^0.292.0
 
+## 🎮 Usage
+
+### Testing the Application
+
+1. **Browse Products**
+   - View all 10 products on the home page
+   - Each product shows image, name, description, price, and category
+
+2. **Add to Cart**
+   - Click "Add to Cart" on any product
+   - Watch the cart count update in the navbar
+   - Products are added to MongoDB database
+
+3. **Manage Cart**
+   - Click the cart icon to view your cart
+   - Update quantities using +/- buttons
+   - Remove items with the "Remove" button
+   - See real-time total calculation
+
+4. **Checkout**
+   - Click "Proceed to Checkout"
+   - Fill in your name and email
+   - Review order summary
+   - Submit order
+
+5. **Order Confirmation**
+   - Receive order confirmation with unique order ID
+   - Order is saved permanently in MongoDB
+   - Cart is automatically cleared
+
+### API Testing
+
+You can test the API endpoints using tools like Postman or curl:
+
+```bash
+# Get all products
+curl http://localhost:5000/api/products
+
+# Get cart items
+curl http://localhost:5000/api/cart
+
+# Add to cart
+curl -X POST http://localhost:5000/api/cart \
+  -H "Content-Type: application/json" \
+  -d '{"productId":"PRODUCT_ID","quantity":1}'
+
+# Get all orders
+curl http://localhost:5000/api/checkout/orders
+```
+
 ## 📄 License
 
 This project is created for educational and screening purposes.
+
+## 👨‍💻 Author
+
+**Tanmay**
+- GitHub: [@tanmay34567](https://github.com/tanmay34567)
+- Repository: [e-commerce-shopping-cart](https://github.com/tanmay34567/e-commerce-shopping-cart)
 
 ## 🤝 Contributing
 
 This is a screening test project. For any questions or issues, please contact the repository owner.
 
+## 🙏 Acknowledgments
+
+- Product images from [Unsplash](https://unsplash.com)
+- Icons from [Lucide React](https://lucide.dev)
+- Built for Vibe Commerce screening test
+
 ---
 
-**Built with ❤️ for Vibe Commerce**
-#   e - c o m m e r c e - s h o p p i n g - c a r t  
- 
+<div align="center">
+
+**Built with ❤️ using React, Node.js, Express & MongoDB**
+
+⭐ Star this repository if you found it helpful!
+
+</div>
