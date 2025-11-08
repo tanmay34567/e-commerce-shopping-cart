@@ -24,12 +24,18 @@ A full-stack e-commerce shopping cart application built with **React**, **Node.j
 ## 📸 Screenshots
 
 ### Products Page
+Browse through our catalog of 10 products with categories, prices, and images.
+
 ![Products Page](screenshots/products.png)
 
 ### Shopping Cart
+Manage your cart items with quantity controls and real-time total calculation.
+
 ![Shopping Cart](screenshots/cart.png)
 
-### Checkout Modal
+### Checkout Process
+Simple checkout form with order summary and customer information.
+
 ![Checkout](screenshots/checkout.png)
 
 ## 🚀 Features
